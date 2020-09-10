@@ -174,9 +174,9 @@ cmd_default() {
 		fi
 		develop_branch=${answer:-$default_suggestion}
 
-		if [ "$master_branch" = "$develop_branch" ]; then
-			die "Production and integration branches should differ."
-		fi
+		# if [ "$master_branch" = "$develop_branch" ]; then
+		# 	die "Production and integration branches should differ."
+		# fi
 
 		# check existence in case of an already existing repo
 		if [ "$should_check_existence" = "YES" ]; then
