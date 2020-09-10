@@ -42,6 +42,8 @@ init () {
 	echo ">> git-flow"
 }
 
+init () {}
+
 usage() {
 	echo "usage: git flow version"
 }
